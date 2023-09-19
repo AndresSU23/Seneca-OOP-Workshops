@@ -1,0 +1,9 @@
+Participation in the workshop was extremely beneficial as it required me to gain a comprehensive understanding of module 
+programming in C++. This involved mastering the skill of using namespaces and header files effectively. Within these 
+header files, build sets were implemented to carefully distinguish headers and ensure their orderly execution.
+
+Additionally, the workshop provided valuable insights into how to use the power of namespaces to improve 
+organizational clarity within modules. Furthermore, I immersed myself in the fascinating world of function polymorphism, 
+which allowed me to create well-structured code that features multiple implementations and effortless readability. This 
+hands-on experience not only polished my C++ skills, but also trained me to create code that is both organized and 
+easily understandable.
