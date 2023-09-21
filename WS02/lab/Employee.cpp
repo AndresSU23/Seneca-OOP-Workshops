@@ -80,7 +80,8 @@ namespace sdds {
    // TODO: Implementation for the deallocateMemory function goes here
    void display() {
        int i;
-       cout << "Employee Salary report, sorted by employee number" << endl << "no - Empno, Name, Salary" << endl << "------------------------------------------------" << endl;
+       sort();
+       cout << "Employee Salary report, sorted by employee number" << endl << "no- Empno, Name, Salary" << endl << "------------------------------------------------" << endl;
        for (i = 0; i < noOfEmployees; i++){
            cout << (i + 1) << "- " << employees[i].m_empNo << ": " << employees[i].m_name << ", $" << employees[i].m_salary << endl;
        }
