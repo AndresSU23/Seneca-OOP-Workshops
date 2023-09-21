@@ -5,7 +5,9 @@
 // Version 1.0
 // Author   Fardad Soleimanloo
 // Description
-//    To be completed by students
+//    Name          David Andres Sanchez Umbarila
+//    Student Id    140273228
+//    Email         dasanchez-umbarila@myseneca.ca
 // Revision History
 // -----------------------------------------------------------
 // Name            Date            Reason
@@ -16,7 +18,9 @@ namespace sdds {
    bool openFile(const char filename[]);
    void closeFile();
    int noOfRecords();
-   // TODO: Declare overloaded read function prototypes
+   bool read(char*& name);
+   bool read(int& number);
+   bool read(double& salary);
  
 
 }

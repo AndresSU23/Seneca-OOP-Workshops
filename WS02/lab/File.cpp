@@ -5,7 +5,9 @@
 // Version 1.0
 // Author   Fardad Soleimanloo
 // Description
-//    To be completed by students
+//    Name          David Andres Sanchez Umbarila
+//    Student Id    140273228
+//    Email         dasanchez-umbarila@myseneca.ca
 // Revision History
 // -----------------------------------------------------------
 // Name            Date            Reason
@@ -13,6 +15,9 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <cstdio>
 #include "File.h"
+#include <string.h>
+
+#define MAX_NAME_SIZE 127
 
 namespace sdds {
    FILE* fptr;
@@ -32,15 +37,24 @@ namespace sdds {
    void closeFile() {
       if (fptr) fclose(fptr);
    }
-   /* TODO: read functions go here    
-   bool read(................) {
-      return .....
+ 
+   bool read(char*& name) {
+       char inFileName[MAX_NAME_SIZE + 1] = "\0";
+       if (fscanf(fptr, "%127[^\n]\n", inFileName)) {
+           name = new char[strlen(inFileName) + 1];
+           strcpy(name, inFileName);
+           return 1;
+       }
+       return 0;
    }
-   bool read(................) {
-      return .....
+
+   bool read(int& number) {
+       return fscanf(fptr, "%d,", &number);
    }
-   bool read(................) {
-      return .....
+
+
+   bool read(double& salary) {
+       return fscanf(fptr, "%lf,", &salary);
    }
-   */
+
 }

@@ -5,7 +5,9 @@
 // Version 1.0
 // Author   Fardad Soleimanloo
 // Description
-//
+//    Name          David Andres Sanchez Umbarila
+//    Student Id    140273228
+//    Email         dasanchez-umbarila@myseneca.ca
 // Revision History
 // -----------------------------------------------------------
 // Name            Date            Reason
