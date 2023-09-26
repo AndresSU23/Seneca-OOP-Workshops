@@ -1,0 +1,17 @@
+Name        : David Andres Sanchez Umbarila
+Student Id  : 140273228
+Email       : dasanchez-umbarila@myseneca.ca
+
+In this workshop we learn about the correct use of dynamic memory and 
+how to fix the memory leaks. We explore the benefits of having the 
+dynamic memory against the static one, this allows us to have a more 
+efficient use of memory we could release and allocate memory in runtime 
+allowing less memory wastage. Because of this we had to be careful to 
+lead any memory without deallocation, this inactivates a more organize 
+style of coding where we kept record of our variables since a careless 
+use of this could lead memory leaks and less readability. Additionally, 
+in this workshop the basic concept of class constructor was used to 
+achieve an easier time deallocating the memory, since all class strings 
+were allocated at the initialization of the class regardless of their 
+use. In summary, we learned how to practically use dynamic memory and 
+understand memory leaks based on their usage.
