@@ -10,14 +10,75 @@
 // -----------------------------------------------------------
 // Name            Date            Reason
 ***********************************************************************/
+#define _CRT_SECURE_NO_WARNINGS
 #include "Population.h"
+#include "File.h"
 #include <cstring>
+#include <iostream>
+using namespace std;
 namespace sdds {
+
+    PopulationCode *codesArr;
+    int totalCodes = 0, searchCodes = 0;
    bool startsWith(const char* cstring, const char* subString) {
       return std::strstr(cstring, subString) == cstring;
    }
 
+   bool getPostalCode(char* postal_code_prefix)
+   {    
+       cout << "Population Report" << endl << "-----------------" << endl << "Enter postal code:" << endl << ">";
+       cin >> postal_code_prefix;
+       if (!strcmp(postal_code_prefix, "!")) return false;
+       return true;
+   }
 
+   bool load(const char* filename, const char* partial_postal_code_prefix)
+   {
+       if (!openFile(filename)) return false;
+       totalCodes = noOfRecords();
+       codesArr = new PopulationCode[totalCodes]{};
+       PopulationCode tempCode{};
+       int i;
+       searchCodes = 0;
+       for (i = 0; i < totalCodes; i++)
+       {
+           if (!(read(tempCode.code) && read(tempCode.population))) { 
+               delete[] tempCode.code;
+               return false; 
+           }
+ 
+           if (!strcmp(partial_postal_code_prefix, "all") || 
+               startsWith(tempCode.code, partial_postal_code_prefix)) {
+
+               strcpy(codesArr[searchCodes].code, tempCode.code);
+               codesArr[searchCodes].population = tempCode.population;
+               searchCodes++;
+           }
+       }
+       delete[] tempCode.code;
+       return true;
+   }
+
+   void display()
+   {
+       cout << "Postal Code: population" << endl << "--------------------------" << endl;
+       int i = 0, totalPopulation = 0;
+       for (i = 0; i < searchCodes; i++)
+       {
+           cout << (i + 1) << "- " << codesArr[i].code << ":  " << codesArr[i].population << endl;
+           totalPopulation += codesArr[1].population;
+       }
+       cout << "--------------------------" << endl << "Population of the listed areas: " << totalPopulation << endl << endl;
+   }
+
+   void deallocateMemory()
+   {
+       int i;
+       for (i = 0; i < totalCodes; i++) delete[] codesArr[i].code;
+       delete[] codesArr;
+   }
+
+   
 
 
 }
