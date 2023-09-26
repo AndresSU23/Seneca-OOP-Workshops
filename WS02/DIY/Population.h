@@ -36,5 +36,7 @@ namespace sdds {
 
    void deallocateMemory();
 
+   void sort();
+
 }
 #endif // SDDS_POPULATION_H_

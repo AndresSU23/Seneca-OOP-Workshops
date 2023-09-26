@@ -61,14 +61,15 @@ namespace sdds {
 
    void display()
    {
-       cout << "Postal Code: population" << endl << "--------------------------" << endl;
+       cout << "Postal Code: population" << endl << "-------------------------" << endl;
        int i = 0, totalPopulation = 0;
+       sort();
        for (i = 0; i < searchCodes; i++)
        {
            cout << (i + 1) << "- " << codesArr[i].code << ":  " << codesArr[i].population << endl;
            totalPopulation += codesArr[1].population;
        }
-       cout << "--------------------------" << endl << "Population of the listed areas: " << totalPopulation << endl << endl;
+       cout << "-------------------------" << endl << "Population of the listed areas: " << totalPopulation << endl << endl;
    }
 
    void deallocateMemory()
@@ -76,6 +77,20 @@ namespace sdds {
        int i;
        for (i = 0; i < totalCodes; i++) delete[] codesArr[i].code;
        delete[] codesArr;
+   }
+
+   void sort() {
+       int i, j;
+       PopulationCode tempCode;
+       for (i = searchCodes - 1; i > 0; i--) {
+           for (j = 0; j < i; j++) {
+               if (codesArr[j].population > codesArr[j + 1].population) {
+                   tempCode = codesArr[j];
+                   codesArr[j] = codesArr[j + 1];
+                   codesArr[j + 1] = tempCode;
+               }
+           }
+       }
    }
 
    
