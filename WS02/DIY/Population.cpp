@@ -26,7 +26,7 @@ namespace sdds {
 
    bool getPostalCode(char* postal_code_prefix)
    {    
-       cout << "Population Report" << endl << "-----------------" << endl << "Enter postal code:" << endl << ">";
+       cout << "Population Report" << endl << "-----------------" << endl << "Enter postal code:" << endl << "> ";
        cin >> postal_code_prefix;
        if (!strcmp(postal_code_prefix, "!")) return false;
        return true;
@@ -41,7 +41,7 @@ namespace sdds {
        int i;
        searchCodes = 0;
        for (i = 0; i < totalCodes; i++)
-       {
+       { 
            if (!(read(tempCode.code) && read(tempCode.population))) { 
                delete[] tempCode.code;
                return false; 
@@ -54,7 +54,9 @@ namespace sdds {
                codesArr[searchCodes].population = tempCode.population;
                searchCodes++;
            }
+	   
        }
+       closeFile();
        delete[] tempCode.code;
        return true;
    }
@@ -67,7 +69,7 @@ namespace sdds {
        for (i = 0; i < searchCodes; i++)
        {
            cout << (i + 1) << "- " << codesArr[i].code << ":  " << codesArr[i].population << endl;
-           totalPopulation += codesArr[1].population;
+           totalPopulation += codesArr[i].population;
        }
        cout << "-------------------------" << endl << "Population of the listed areas: " << totalPopulation << endl << endl;
    }
@@ -81,16 +83,22 @@ namespace sdds {
 
    void sort() {
        int i, j;
-       PopulationCode tempCode;
+       PopulationCode tempCode{};
        for (i = searchCodes - 1; i > 0; i--) {
            for (j = 0; j < i; j++) {
                if (codesArr[j].population > codesArr[j + 1].population) {
-                   tempCode = codesArr[j];
-                   codesArr[j] = codesArr[j + 1];
-                   codesArr[j + 1] = tempCode;
+                   strcpy(tempCode.code,codesArr[j].code);
+		   tempCode.population = codesArr[j].population;
+		   
+		   strcpy(codesArr[j].code, codesArr[j+1].code);
+		   codesArr[j].population = codesArr[j+1].population;
+		  
+		   strcpy(codesArr[j+1].code,tempCode.code);
+                   codesArr[j+1].population = tempCode.population;
                }
            }
        }
+       delete[] tempCode.code;
    }
 
    

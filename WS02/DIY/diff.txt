@@ -1,0 +1,14 @@
+In line number 13 of your output:
+The output should be:
+1- A1H:  5493
+     ^
+But your output is: 
+1- A1A:  5493
+     ^
+
+Unmatched character details:
+The character in column 6 is supposed to be:
+  [H] ASCII code(72)
+but you printed
+  [A] ASCII code(65)
+
