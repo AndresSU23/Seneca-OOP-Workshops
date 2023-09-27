@@ -73,9 +73,9 @@ namespace sdds {
 			cout << "Train in an invalid State!" << endl;
 		}
 		else{
-			cout << "NAME OF THE TRAIN:     " << getName()			<< endl
-				 << "NUMBER OF PASSENGERS:  " << noOfPassengers()   << endl
-				 << "DEPARTURE TIME:        " << getDepartureTime() << endl;
+			cout << "NAME OF THE TRAIN:    " << getName()			<< endl
+				 << "NUMBER OF PASSENGERS: " << noOfPassengers()   << endl
+				 << "DEPARTURE TIME:       " << getDepartureTime() << endl;
 		}
 		return cout;
 	}
