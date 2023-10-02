@@ -122,7 +122,7 @@ namespace sdds {
 		delete[] tempName;
 		int transferPassengers = tranferTrain.noOfPassengers();
 		if (!noPromptLoad(transferPassengers)) {
-			cout << "Train is full; " << transferPassengers << " passengers of " << getName() << " could not be boarded!" << endl;
+			cout << "Train is full; " << transferPassengers << " passengers of " << tranferTrain.getName() << " could not be boarded!" << endl;
 		}
 		return true;
 	}
