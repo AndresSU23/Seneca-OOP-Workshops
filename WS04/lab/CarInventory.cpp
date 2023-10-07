@@ -95,7 +95,6 @@ namespace sdds {
 	{
 		for (int i = 0; i < num_cars; i++) {
 			for (int j = i + 1; j < num_cars; j++) {
-				bool temp = car[i].isSimilarTo(car[j]);
 				if (car[i].isSimilarTo(car[j])) {
 					return i;
 				}
