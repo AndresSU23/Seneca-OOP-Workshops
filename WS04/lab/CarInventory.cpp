@@ -36,6 +36,13 @@ namespace sdds {
 		m_code = 0;
 		m_price = 0;
 	}
+
+	CarInventory::~CarInventory(){
+		delete[] m_type;
+		delete[] m_brand;
+		delete[] m_model;
+	}
+
 	CarInventory::CarInventory(){
 		resetInfo();
 	}

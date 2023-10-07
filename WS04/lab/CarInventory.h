@@ -36,6 +36,7 @@ namespace sdds {
 		void resetInfo();
 
 	public:
+		~CarInventory();
 		CarInventory();
 		CarInventory(const char* type, const char* brand, const char* model, int year = 2022, int code = 100, double price = 1.0);
 		CarInventory& setInfo(const char* type, const char* brand, const char* model, int year, int code, double price);
