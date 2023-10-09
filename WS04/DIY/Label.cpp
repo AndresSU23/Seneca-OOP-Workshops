@@ -68,8 +68,8 @@ namespace sdds {
 		}
 	}
 	istream& Label::readLabel() {
-		char temp[70+1];
-		cin.getline(temp, 70);
+		char temp[CONTENT_SIZE + 1];
+		cin.getline(temp, CONTENT_SIZE + 1);
 		strcpy(m_content, temp);
 		return cin;
 	}
