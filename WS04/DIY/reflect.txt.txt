@@ -1,0 +1,39 @@
+/***********************************************************************
+// OOP244 Workshop #4 DIY (part 2): reflection
+//
+// File  reflect.txt
+// Version 1.0
+// Author  David Andres Sanchez Umbarila
+// Description
+//	Name      : David Andres Sanchez Umbarila
+//	Student ID: 140273228
+//	Email     : dasanchez-umbarila@myseneca.ca
+/	Date      : 07/10/2023
+//
+//	I have done all the coding by myself and only copied the code
+//	 that my professor provided to complete my workshops and
+//	 assignments.
+//
+// Revision History
+// -----------------------------------------------------------
+// Name                 Date            Reason
+***********************************************************************/
+
+In this workshop, we're exploring the inner workings of iostream, with 
+a particular focus on cin and cout for effectively managing formatted 
+outputs and processing extensive string inputs. Instead of relying on 
+traditional C expressions, we're turning our attention to some powerful 
+new functions, including setw, setfill, right, and left. These functions
+ offer us precise control over the characters within cout, allowing us 
+to finely adjust text alignment and spacing.
+
+With these tools in our toolkit, we can produce elegant, custom-formatted
+ outputs tailored to our needs. Additionally, we're exploring the cin
+ function getline, which serves a similar purpose as the %[^\n] expression
+ in C. This function enables us to capture all characters in the input 
+until it encounters a newline character, making it exceptionally valuable 
+for managing large string inputs.
+
+Overall, this workshop equips us with a comprehensive understanding of 
+iostream, empowering us to craft sophisticated code while efficiently 
+handling input and output operations in C++.
