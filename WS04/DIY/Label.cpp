@@ -75,7 +75,7 @@ namespace sdds {
 	}
 	ostream& Label::printLabel() const {
 		if (!strlen(m_content)) return cout;
-		cout << right << m_frameArg[0] << setfill(m_frameArg[1]) << setw(strlen(m_content) + 3) << m_frameArg[0] << endl;
+		cout << right << m_frameArg[0] << setfill(m_frameArg[1]) << setw(strlen(m_content) + 3) << m_frameArg[2] << endl;
 		cout << m_frameArg[7] << setfill(' ') << setw(strlen(m_content) + 3) << m_frameArg[3] << endl;
 		cout << m_frameArg[7] << " " << m_content << " " << m_frameArg[3] << endl;
 		cout << m_frameArg[7] << setfill(' ') << setw(strlen(m_content) + 3) << m_frameArg[3] << endl;
