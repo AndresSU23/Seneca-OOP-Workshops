@@ -33,6 +33,7 @@ namespace sdds {
 	}
 	void LabelMaker::readLabels() {
 		int i; 
+		cout << "Enter " << m_noOfLabels << " labels:" << endl;
 		for (i = 0; i < m_noOfLabels; i++) {
 			cout << "Enter label number " << i + 1 << endl;
 			cout << "> ";

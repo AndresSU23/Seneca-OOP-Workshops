@@ -79,7 +79,7 @@ namespace sdds {
 		cout << m_frameArg[7] << setfill(' ') << setw(strlen(m_content) + 3) << m_frameArg[3] << endl;
 		cout << m_frameArg[7] << " " << m_content << " " << m_frameArg[3] << endl;
 		cout << m_frameArg[7] << setfill(' ') << setw(strlen(m_content) + 3) << m_frameArg[3] << endl;
-		cout << m_frameArg[6] << setfill(m_frameArg[5]) << setw(strlen(m_content) + 3) << m_frameArg[4];
+		cout << m_frameArg[6] << setfill(m_frameArg[5]) << setw(strlen(m_content) + 3) << m_frameArg[4] << endl;
 		return cout;
 	}
 	Label& Label::text(const char* content) {
