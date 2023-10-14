@@ -138,7 +138,7 @@ namespace sdds {
 
     Flight& Flight::operator+=(int addPasssengers)
     {
-        m_passengers += (addPasssengers < 0 || ((m_passengers + addPasssengers) > Boen747Capacity)) ? 0 : addPasssengers;
+        m_passengers += (addPasssengers < 0 || (m_passengers + addPasssengers) > Boen747Capacity) ? 0 : addPasssengers;
         return *this;
     }
 
@@ -173,7 +173,7 @@ namespace sdds {
 
     int Flight::operator+(const Flight& flight) const
     {
-        return (~*this && ~flight) * (m_passengers + flight.m_passengers);
+        return (*this && flight) ? (m_passengers + flight.m_passengers) : 0;
     }
 
     int operator+=(int& passengers, const Flight& flight)
