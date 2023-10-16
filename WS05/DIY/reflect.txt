@@ -1,0 +1,20 @@
+Name      : David Andres Sanchez Umbarila
+Student ID: 140273228
+Email     : dasanchez-umbarila@myseneca.ca
+Date      : 07/10/2023
+
+I have done all the coding by myself and only copied the code
+ that my professor provided to complete my workshops and
+ assignments.
+
+In our recent workshop on C++ operators, we dived into the 
+world of operator usage and manipulation. We gained a solid 
+grasp of the correct application of these operators and 
+explored their versatile functions. An important takeaway was
+ the ability to employ operators as efficient getters and 
+setters, thus eliminating the need for additional functions
+ dedicated to these tasks. This newfound knowledge streamlines
+ our coding processes and enables us to exercise more precise
+ control over private data within objects and classes. This 
+workshop taught us to write more efficient and maintainable 
+code.

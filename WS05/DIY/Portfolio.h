@@ -13,7 +13,9 @@
 #ifndef SDDS_Portfolio_H_
 #define SDDS_Portfolio_H_
 
+#include <iostream>
 
+using namespace std;
 namespace sdds {
 
    class Portfolio {
@@ -22,7 +24,23 @@ namespace sdds {
       char m_type;
 
    public:
-
+       Portfolio();
+       Portfolio(double value, const char* stock, char type);
+       void emptyPortfolio();
+       void dispPortfolio() const;
+       ostream& display() const;
+       operator double() const;
+       operator const char* () const;
+       operator char() const;
+       operator bool() const;
+       Portfolio& operator +=(const double value);
+       Portfolio& operator -=(const double value);
+       bool operator ~() const;
+       Portfolio& operator <<(Portfolio& transfer);
+       Portfolio& operator >>(Portfolio& transfer);
    };
+
+   double operator +(const Portfolio& p1, const Portfolio& p2);
+   double& operator +=(double& value, const Portfolio& portfolio);
 }
 #endif // SDDS_Portfolio_H_
