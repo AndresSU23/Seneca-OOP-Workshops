@@ -5,6 +5,14 @@
 // Version 1.0
 // Author   Asam Gulaid, revised by Fardad Soleimanloo
 // Description
+//			Name      : David Andres Sanchez Umbarila
+//			Student ID: 140273228
+//			Email     : dasanchez-umbarila@myseneca.ca
+/			Date      : 07/10/2023
+//
+//			I have done all the coding by myself and only copied the code
+//			 that my professor provided to complete my workshops and
+//			 assignments.
 //
 // Revision History
 // -----------------------------------------------------------
