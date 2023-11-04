@@ -97,7 +97,7 @@ namespace sdds {
 		if (validID(m_name, m_number, m_vCode, m_sNumber)) {
 			if (toFile) {
 				ostr << m_name << ",";
-				printIDInfo(ostr) << endl;
+				printIDInfo(ostr)  << endl;
 			}
 			else {
 				ostr << left << setw(50) << setfill('.') << m_name << right;
