@@ -1,0 +1,36 @@
+/***********************************************************************
+// OOP244 Workshop #6 lab : reflection
+//
+// File  reflect.txt
+// Version 1.0
+// Author   
+// Description
+//	Name      : David Andres Sanchez Umbarila
+//	Student ID: 140273228
+//	Email     : dasanchez-umbarila@myseneca.ca
+//	Date      : 03/11/2023
+//
+//	I have done all the coding by myself and only copied the code
+//	 that my professor provided to complete my workshops and
+//	 assignments.
+// Revision History
+// -----------------------------------------------------------
+// Name                 Date            Reason
+***********************************************************************/
+	During this workshop we saw the Object-Oriented approach to the 
+input and output by treating them as object changing the reference to 
+them depending on the desired reading and writing output. This workshop 
+showed the correct way to design read and print functions regardless of 
+the channel of information. The only change made to these traditional 
+functions is that we are passing the reference to the channel in 
+question as an attribute and returning guaranteeing the use the given 
+channel instead of the default standard cin and cout. Additionally, this 
+laboratory allowed us to reinforce the concepts of polymorphism and 
+operators. By creating numerous functions for the easy loading and 
+setting of data. This allowed us to have a more coherent workspace were 
+checks and assignments were only done in specific functions instead of 
+having them disperse around the program reducing the number of bugs and 
+deallocated memory. In Summary, we reinforced the appropriate use of 
+polymorphism and learn the application of OOP towards more efficient 
+data interactions functions that allowed for a more efficent style of 
+coding that reduces the code complexity.
