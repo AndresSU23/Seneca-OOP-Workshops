@@ -1,0 +1,34 @@
+/***********************************************************************
+// OOP244 Workshop #7 lab
+//
+// File  reflect.txt
+// Version 1.0
+// Author David Andres Sanchez Umbarila
+// Description
+//			Name      : David Andres Sanchez Umbarila
+//			Student ID: 140273228
+//			Email     : dasanchez-umbarila@myseneca.ca
+/			Date      :
+//
+//			I have done all the coding by myself and only copied the code
+//			 that my professor provided to complete my workshops and
+//			 assignments.
+// Revision History
+// -----------------------------------------------------------
+// Name                 Date            Reason
+***********************************************************************/
+During this workshop we implemented a new concept essential for 
+Object-Oriented Programming called Inheritance. This tool allows us to 
+reuse other classes as template creation for new ones. Giving us the 
+opportunity to use the attributes and behavior of the father class. 
+Additionally, we learned new ways to set privacy related to inheritance 
+where the new class can only get certain parts of the original class 
+allowing for a more organize application with less risk of bugs, by 
+setting the attributes and methods as protected we can have the same 
+restrictions as private but share it with the one who inherit it. 
+Finally, we saw the behavior of scopes in these scenarios where the 
+new class will shadow the inherited class having priority when 
+presented with overloaded methods. In summary, this workshop 
+introduces us to the implementation of inheritance in c++ how create 
+and call methods, regarding the privacy and scope of the inherited 
+one.
