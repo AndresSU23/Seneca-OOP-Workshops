@@ -66,6 +66,7 @@ namespace sdds {
 		}
 		else {
 			if (noOfUnits() < size()) {
+				cout << "Add to ";
 				print(cout) << endl << "> ";
 				int add{};
 				do {
