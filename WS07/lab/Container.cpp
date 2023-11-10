@@ -92,7 +92,7 @@ namespace sdds {
 		}
 		else {
 			cout << "Add to ";
-			print(cout) << endl << ">";
+			print(cout) << endl << "> ";
 			int add{};
 			do {
 				istr >> add;

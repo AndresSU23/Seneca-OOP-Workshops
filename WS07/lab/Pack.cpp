@@ -66,7 +66,7 @@ namespace sdds {
 		}
 		else {
 			if (noOfUnits() < size()) {
-				print(cout) << endl << ">";
+				print(cout) << endl << "> ";
 				int add{};
 				do {
 					istr >> add;
