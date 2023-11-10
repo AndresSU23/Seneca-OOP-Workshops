@@ -91,6 +91,7 @@ namespace sdds {
 			istr.get();
 		}
 		else {
+			cout << "Add to ";
 			print(cout) << endl << ">";
 			int add{};
 			do {
@@ -98,7 +99,7 @@ namespace sdds {
 				if (istr.fail()) cout << "Invalid Integer, retry: ";
 				else if (add < 1 || add > 999) cout << "Value out of range [1<=val<=999]: ";
 			} while (istr.fail() || add < 1 || add > 999);
-			cout << "Added " << (*this += add) << " CCs";
+			cout << "Added " << (*this += add) << " CCs" << endl;
 		}
 		return istr;
 	}
