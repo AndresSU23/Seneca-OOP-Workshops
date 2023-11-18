@@ -35,7 +35,7 @@ namespace sdds {
 	void Line::draw(std::ostream& ostr) const {
 		if (m_length && label()) {
 			ostr << label() << std::endl;
-			for (size_t i = 0; i < m_length; i++) ostr << '=';
+			for (int i = 0; i < m_length; i++) ostr << '=';
 		}
 	}
 }

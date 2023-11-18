@@ -20,6 +20,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iomanip>
+#include <cstring>
 
 #include "Rectangle.h"
 
@@ -35,7 +36,6 @@ namespace sdds {
 	Rectangle::~Rectangle() {
 	}
 	void Rectangle::getSpecs(std::istream& istr) {
-		char temp[1]{};
 		LblShape::getSpecs(istr);
 		istr >> m_width;
 		istr.get();
