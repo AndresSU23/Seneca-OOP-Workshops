@@ -18,6 +18,7 @@
 using namespace sdds;
 using namespace std;
 int main() {
+   
    cout << "Nothing should be printed between these two lines" << endl;
    cout << "------------------------------------" << endl;
    Line BadOne;
@@ -50,6 +51,7 @@ int main() {
    cout << *S[0] << endl << *S[1] << endl;
    delete S[0];
    delete S[1];
+ 
    cout << "Reading the data from a file" << endl;
    ifstream file("ws8data.csv");
    Shape* sptr;
