@@ -26,7 +26,7 @@
 namespace sdds {
 	class Shape {
 	public:
-		~Shape();
+		virtual ~Shape();
 		virtual void draw(std::ostream& ostr) const = 0;
 		virtual void getSpecs(std::istream& istr) = 0;
  
