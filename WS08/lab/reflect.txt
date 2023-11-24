@@ -1,0 +1,39 @@
+/***********************************************************************
+// OOP244 Workshop #8 lab
+//
+// File  reflect
+// Version 1.0
+// Author David Andres Sanchez Umbarila
+// Description
+//	Name      : David Andres Sanchez Umbarila
+//	Student ID: 140273228
+//	Email     : dasanchez-umbarila@myseneca.ca
+/	Date      :
+//
+//	I have done all the coding by myself and only copied the code
+//	 that my professor provided to complete my workshops and
+//	 assignments.
+// Revision History
+// -----------------------------------------------------------
+// Name                 Date            Reason
+***********************************************************************/
+In this workshop, we explored the concepts and applications of 
+inheritance and derived classes in C++. Our primary goal was to 
+understand how to effectively use these concepts to create elements that
+ share traits with a parent class by extending base classes. A key aspect
+ involved gaining a solid grasp of the process for selecting base class 
+aspects during implementation and ensuring the correct method for calling
+ them.
+
+The practical side of our exploration included hands-on experimentation
+ with various objects inheriting from the same base classes. During this
+ phase, we adjusted base methods and made necessary modifications to 
+data members and constructors. This direct experience not only 
+reinforced our understanding of inheriting from base classes but also 
+refined our ability to adapt methods for different implementations.
+
+As a result of this immersive workshop, we've developed the practical 
+skills to inherit from base classes and modify methods to suit diverse 
+needs. This proficiency allows us to effortlessly create multiple 
+objects, each showcasing behaviors precisely tailored to meet 
+specific programming requirements.
