@@ -27,22 +27,19 @@
 namespace sdds {
 	Student::Student(): m_name{nullptr}, m_age(0){}
 	Student::Student(const char* name, const int age) {
-		if (name) {
-			m_name = new char[strlen(name) + 1];
-			strcpy(m_name, name);
-		}
+		m_name = new char[strlen(name) + 1];
+		strcpy(m_name, name);
 		m_age = age;
 	}
 	Student::Student(const Student& student) {
 		*this = student;
 	}
 	Student& Student::operator=(const Student& student) {
-		if (student.m_name) {
-			delete[] m_name;
-			m_name = nullptr;
-			m_name = new char[strlen(student.m_name) + 1];
-			strcpy(m_name, student.m_name);
-		}
+		delete[] m_name;
+		m_name = nullptr;
+		m_name = new char[strlen(student.m_name) + 1];
+		strcpy(m_name, student.m_name);
+
 		m_age = student.m_age;
 		return *this;
 	}

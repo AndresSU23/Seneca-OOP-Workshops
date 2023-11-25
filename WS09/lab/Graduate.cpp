@@ -29,32 +29,25 @@ namespace sdds {
 	Graduate::Graduate() : Student(), m_supvr(nullptr), m_thesis(nullptr) {}
 
 	Graduate::Graduate(const char* stName, const int age, const char* thesis, const char* suprv) : Student(stName, age) {
-		if (thesis) {
-			m_thesis = new char[strlen(thesis) + 1];
-			strcpy(m_thesis, thesis);
-		}
-		if (suprv) {
-			m_supvr = new char[strlen(suprv) + 1];
-			strcpy(m_supvr, suprv);
-		}
+		m_thesis = new char[strlen(thesis) + 1];
+		strcpy(m_thesis, thesis);
+		m_supvr = new char[strlen(suprv) + 1];
+		strcpy(m_supvr, suprv);
 	}
 	Graduate::Graduate(const Graduate& graduate) {
 		*this = graduate;
 	}
 	Graduate& Graduate::operator=(const Graduate& graduate) {
 		Student::operator = (graduate);
-		if (graduate.m_thesis) {
-			delete[] m_thesis;
-			m_thesis = nullptr;
-			m_thesis = new char[strlen(graduate.m_thesis) + 1];
-			strcpy(m_thesis, graduate.m_thesis);
-		}
-		if (graduate.m_supvr) {
-			delete[] m_supvr;
-			m_supvr = nullptr;
-			m_supvr = new char[strlen(graduate.m_supvr) + 1];
-			strcpy(m_supvr, graduate.m_supvr);
-		}
+		delete[] m_thesis;
+		m_thesis = nullptr;
+		m_thesis = new char[strlen(graduate.m_thesis) + 1];
+		strcpy(m_thesis, graduate.m_thesis);
+
+		delete[] m_supvr;
+		m_supvr = nullptr;
+		m_supvr = new char[strlen(graduate.m_supvr) + 1];
+		strcpy(m_supvr, graduate.m_supvr);
 		return *this;
 	}
 	Graduate::~Graduate() {
