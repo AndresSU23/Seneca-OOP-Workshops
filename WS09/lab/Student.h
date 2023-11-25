@@ -32,7 +32,7 @@ namespace sdds {
 		Student(const char* name, const int age);
 		Student(const Student& student);
 		Student& operator=(const Student& student);
-		~Student();
+		virtual ~Student();
 
 		void display();
 	};
