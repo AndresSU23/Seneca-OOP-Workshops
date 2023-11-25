@@ -38,10 +38,8 @@ namespace sdds {
 	}
 	Student& Student::operator=(const Student& student) {
 		if (student.m_name) {
-			if (m_name) {
-				delete[] m_name;
-				m_name = nullptr;
-			}
+			delete[] m_name;
+			m_name = nullptr;
 			m_name = new char[strlen(student.m_name) + 1];
 			strcpy(m_name, student.m_name);
 		}

@@ -44,18 +44,14 @@ namespace sdds {
 	Graduate& Graduate::operator=(const Graduate& graduate) {
 		Student::operator = (graduate);
 		if (graduate.m_thesis) {
-			if (m_thesis) {
-				delete[] m_thesis;
-				m_thesis = nullptr;
-			}
+			delete[] m_thesis;
+			m_thesis = nullptr;
 			m_thesis = new char[strlen(graduate.m_thesis) + 1];
 			strcpy(m_thesis, graduate.m_thesis);
 		}
 		if (graduate.m_supvr) {
-			if (m_supvr) {
-				delete[] m_supvr;
-				m_supvr = nullptr;
-			}
+			delete[] m_supvr;
+			m_supvr = nullptr;
 			m_supvr = new char[strlen(graduate.m_supvr) + 1];
 			strcpy(m_supvr, graduate.m_supvr);
 		}
