@@ -26,7 +26,7 @@
 #include "Graduate.h"
 
 namespace sdds {
-	Graduate::Graduate() : m_supvr(nullptr), m_thesis(nullptr), Student() {}
+	Graduate::Graduate() : Student(), m_supvr(nullptr), m_thesis(nullptr) {}
 
 	Graduate::Graduate(const char* stName, const int age, const char* thesis, const char* suprv) : Student(stName, age) {
 		if (thesis) {
@@ -66,8 +66,6 @@ namespace sdds {
 		m_supvr = nullptr;
 		delete[] m_thesis;
 		m_thesis = nullptr;
-
-		Student::~Student();
 	}
 	void Graduate::display() {
 		Student::display();
