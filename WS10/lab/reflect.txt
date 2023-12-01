@@ -1,0 +1,35 @@
+/***********************************************************************
+// OOP244 Workshop # 10
+// Module: reflection
+// File: reflect.txt
+// Version 1.0
+// Author
+// Description
+//			Name      : David Andres Sanchez Umbarila
+//			Student ID: 140273228
+//			Email     : dasanchez-umbarila@myseneca.ca
+/			Date      :
+//
+//			I have done all the coding by myself and only copied the code
+//			 that my professor provided to complete my workshops and
+//			 assignments.
+// Revision History
+// -----------------------------------------------------------
+// Name                 Date            Reason
+***********************************************************************/
+During this workshop we learned the use of templates a tool that 
+provides c++ with more flexibility like other languages allowing for
+more dynamic coding. Template allow declaring data types, classes, etc 
+as blank objects that can take a shape once the function is called, 
+this could be seen an overloading of function with as many types as 
+possible. In the case of template a new function or class is created
+when is called under a template with the respective new parameters. 
+This distinct their use in terms of memory and optimization, but 
+regardless it implements the concept of polymorphism to another level 
+providing more options. At the same time, this can lead bugs and crashes 
+if implementation is not done correctly for what we have to design 
+cleaner code that adapts to multiple established scenarios. In 
+conclusion, templates provide a blank space for classes and datatype 
+implementing polymorphism in a faster and more structural way than 
+overriding, allowing for faster development of multiple classes 
+with similar behavior.
